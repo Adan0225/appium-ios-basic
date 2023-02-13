@@ -8,14 +8,15 @@ from selenium.webdriver.common.keys import Keys
 class LoginTests(unittest.TestCase):
 
     def setUp(self):
-        app = ('/Users/lawrey/Library/Developer/Xcode/DerivedData/AppiumTest-fubxvjmcpxiewkenopxpcerwhudw/Build/Products/Debug-iphonesimulator/AppiumTest.app')
+        app = ('/Users/aijinka/Library/Developer/Xcode/DerivedData/AppiumTest-ftszoajzxjgfnuenisfsmcbpkooc/Build/Products/Debug-iphonesimulator/AppiumTest.app')
         self.driver = webdriver.Remote(
             command_executor='http://127.0.0.1:4723/wd/hub',
             desired_capabilities={
                 'app': app,
                 'platformName': 'iOS',
-                'platformVersion': '11.4',
-                'deviceName': 'iPhone 6s'
+                'udid':'0AB469AE-6125-49B0-A11A-F0446D52487E',
+                'platformVersion': '16.2',
+                'deviceName': 'iPhone14Pro'
             }
         )
 
